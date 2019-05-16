@@ -1,3 +1,29 @@
-.header {
+.container {
   display: grid;
-  grid-template-rows: 100vh min-content; }
+  grid-template-rows: 100vh repeat(4, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+  margin: auto 0; }
+  .container > * {
+    font-size: 1rem;
+    padding: 40px; }
+
+.header {
+  grid-column: center-start / center-end; }
+  .header__heading-1 {
+    font-family: Averia Gruesa Libre,serif;
+    color: #192735; }
+  .header img {
+    height: 10rem;
+    width: 10rem; }
+
+.projects {
+  grid-column: center-start / center-end; }
+
+.resume {
+  grid-column: center-start / center-end; }
+
+.gallery {
+  grid-column: center-start / center-end; }
+
+.contact {
+  grid-column: center-start / center-end; }
