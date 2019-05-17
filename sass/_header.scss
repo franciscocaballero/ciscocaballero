@@ -1,6 +1,11 @@
 .header {
-    grid-column: center-start / center-end;
+    grid-column: col-start 1 / col-end;
     
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 100%;
+  
+
     &__heading-1 {
         font-family: Averia Gruesa Libre,serif;
         color: #192735;

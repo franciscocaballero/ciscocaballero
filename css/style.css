@@ -4,11 +4,10 @@
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
   margin: auto 0; }
   .container > * {
-    font-size: 1rem;
-    padding: 40px; }
+    font-size: 1rem; }
 
 .header {
-  grid-column: center-start / center-end; }
+  grid-column: col-start 1 / col-end; }
   .header__heading-1 {
     font-family: Averia Gruesa Libre,serif;
     color: #192735; }
