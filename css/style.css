@@ -1,3 +1,8 @@
+html {
+  font-family: Inter UI,sans-serif;
+  -webkit-text-size-adjust: 100%;
+  color: #192735; }
+
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(4, min-content);
@@ -6,14 +11,31 @@
   .container > * {
     font-size: 1rem; }
 
+.paragraph {
+  font-size: 20px;
+  line-height: 24px;
+  opacity: .8;
+  color: #192735; }
+
+.simple__link {
+  color: #192735; }
+
 .header {
-  grid-column: col-start 1 / col-end; }
+  grid-column: col-start 3 / col-end 8;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center; }
   .header__heading-1 {
     font-family: Averia Gruesa Libre,serif;
-    color: #192735; }
+    color: #192735;
+    font-size: 5.5rem;
+    margin-bottom: 1.6rem; }
   .header img {
-    height: 10rem;
-    width: 10rem; }
+    height: 12rem;
+    width: 12rem; }
 
 .projects {
   grid-column: center-start / center-end; }

@@ -1,18 +1,23 @@
 .header {
-    grid-column: col-start 1 / col-end;
-    
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 100%;
-  
+    grid-column: col-start 3 / col-end 8;
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: auto;
+    // justify-self: end;
+    justify-items: center;
+    align-items: center;
+
 
     &__heading-1 {
         font-family: Averia Gruesa Libre,serif;
-        color: #192735;
+        color: $color-grey-dark-3;
+        font-size: 5.5rem;
+        margin-bottom: 1.6rem;
     }
 
     img {
-        height: 10rem;
-        width: 10rem;
+        height: 12rem;
+        width: 12rem;
     }
 }
