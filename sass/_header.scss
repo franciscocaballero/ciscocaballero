@@ -1,18 +1,15 @@
 .header {
-    grid-column: col-start 3 / col-end 8;
-    padding: 0 5rem;
-    display: grid;
-    grid-template-columns: 70vw 30vw;
-    grid-template-rows: auto;
-    // justify-self: end;
-    justify-items: center;
-    align-items: center;
-
-
+    // grid-column: col-start 1 / col-end 8;
+    // padding: 0 5rem;
+    // display: grid;
+    // grid-template-columns: 70vw 30vw;
+    // grid-template-rows: auto;
+    // align-items: center;
+    background-color: green;
     &__heading-1 {
         font-family: Averia Gruesa Libre,serif;
         color: $color-grey-dark-3;
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         margin-bottom: 1.6rem;
     }
 
