@@ -1,44 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 html {
-  font-family: Inter UI,sans-serif;
-  -webkit-text-size-adjust: 100%;
-  color: #192735; }
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto',sans-serif; }
+
+.body {
+  color: #192735;
+  font-weight: 300;
+  line-height: 24px; }
 
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(4, min-content);
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 10rem)) 1fr; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
-    font-size: 1rem;
     padding: 40px; }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
   opacity: .8;
   color: #192735;
-  display: block; }
+  display: inrblock; }
 
 .simple__link {
   color: #192735; }
 
 .header {
-  background-color: green; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center; }
   .header__heading-1 {
-    font-family: Averia Gruesa Libre,serif;
+    font-family: serif;
     color: #192735;
     font-size: 4.5rem;
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1rem; }
   .header img {
-    height: 12rem;
-    width: 12rem; }
+    height: 14rem;
+    width: 14rem; }
+  .header i {
+    color: #d0021b;
+    font-size: 1.6rem; }
 
 .projects {
+  grid-column: center-start / center-end;
   background-color: pink; }
 
 .resume {
+  grid-column: center-start / center-end;
   background-color: red; }
 
 .gallery {
+  grid-column: center-start / center-end;
   background-color: blue; }
 
 .contact {
+  grid-column: center-start / center-end;
   background-color: aqua; }
