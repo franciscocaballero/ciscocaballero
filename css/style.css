@@ -27,10 +27,14 @@ html {
   line-height: 2.2rem;
   opacity: .8;
   color: #192735;
-  display: inrblock; }
+  display: block; }
 
 .simple__link {
   color: #192735; }
+  .simple__link-1:hover {
+    color: #00ffb3; }
+  .simple__link-2:hover {
+    color: #8400ff; }
 
 .header {
   grid-column: center-start / center-end;

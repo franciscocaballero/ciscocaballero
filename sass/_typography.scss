@@ -3,10 +3,21 @@
    line-height: 2.2rem;
    opacity: .8;
    color: $color-grey-dark-3;
-   display: inrblock;
+   display: block;
    
 }
 
-.simple__link {
+.simple__link{
     color: $color-grey-dark-3;
+   
+    &-1{
+        &:hover {
+            color: #00ffb3;
+        }
+    }
+    &-2{
+        &:hover {
+            color: #8400ff;
+        }
+    }
 }
