@@ -1,4 +1,7 @@
 .projects {
     grid-column: center-start / center-end;
     background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
