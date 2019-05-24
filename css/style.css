@@ -74,11 +74,14 @@ html {
     animation: infinateArrow 1s infinite;
     padding-top: 1rem; }
 
-.projects {
+.Project {
   grid-column: center-start / center-end;
   background-color: pink;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
+  .Project .Projects img {
+    height: 10rem;
+    width: 15rem; }
 
 .resume {
   grid-column: center-start / center-end;
