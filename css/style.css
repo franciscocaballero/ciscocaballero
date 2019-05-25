@@ -38,12 +38,21 @@ html {
   .container > * {
     padding: 40px; }
 
+.heading-3 {
+  color: #d0021b;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px; }
+
 .paragraph {
   font-size: 1.2rem;
   line-height: 2rem;
   opacity: .8;
   color: #192735;
   display: block; }
+
+.paragraph-light {
+  color: #747373; }
 
 .simple__link {
   color: #192735; }
@@ -76,12 +85,28 @@ html {
 
 .Project {
   grid-column: center-start / center-end;
-  background-color: pink;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  justify-items: center;
+  align-self: center;
+  grid-template-columns: 20% 80%; }
   .Project .Projects img {
-    height: 10rem;
-    width: 15rem; }
+    height: 7rem;
+    width: 11rem; }
+
+.btn {
+  background-color: transparent;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #747373;
+  color: #747373;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px; }
+  .btn:hover {
+    color: #192735 !important;
+    border: 1px solid #192735;
+    transition: .2s; }
 
 .resume {
   grid-column: center-start / center-end;
