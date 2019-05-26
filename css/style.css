@@ -24,7 +24,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Roboto',sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .body {
   color: #192735;
@@ -37,6 +37,18 @@ html {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.margin-bottom-large {
+  margin-bottom: 6rem; }
+
+.margin-bottom-xl {
+  margin-bottom: 8rem; }
 
 .heading-3 {
   color: #d0021b;
@@ -52,14 +64,34 @@ html {
   display: block; }
 
 .paragraph-light {
-  color: #747373; }
+  color: #747373;
+  line-height: 1.4rem; }
+
+.colored__link {
+  color: #192735; }
+  .colored__link-1:hover {
+    color: #00ffb3; }
+  .colored__link-2:hover {
+    color: #8400ff; }
 
 .simple__link {
-  color: #192735; }
-  .simple__link-1:hover {
-    color: #00ffb3; }
-  .simple__link-2:hover {
-    color: #8400ff; }
+  text-decoration: none;
+  color: #747373; }
+
+.btn {
+  background-color: transparent;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #747373;
+  color: #747373;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px; }
+  .btn:hover {
+    color: #192735 !important;
+    border: 1px solid #192735;
+    transition: .2s; }
 
 .header {
   grid-column: center-start / center-end;
@@ -86,27 +118,16 @@ html {
 .Project {
   grid-column: center-start / center-end;
   display: grid;
-  justify-items: center;
-  align-self: center;
-  grid-template-columns: 20% 80%; }
-  .Project .Projects img {
-    height: 7rem;
-    width: 11rem; }
-
-.btn {
-  background-color: transparent;
-  font-family: inherit;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  border: 1px solid #747373;
-  color: #747373;
-  text-transform: uppercase;
-  font-size: .8rem;
-  letter-spacing: 1px; }
-  .btn:hover {
-    color: #192735 !important;
-    border: 1px solid #192735;
-    transition: .2s; }
+  grid-template-columns: 20% 80%;
+  justify-items: center; }
+  .Project .Projects {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(3, 100%);
+    grid-gap: 2rem; }
+    .Project .Projects img {
+      height: 7rem;
+      width: 11rem; }
 
 .resume {
   grid-column: center-start / center-end;
