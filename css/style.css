@@ -14,6 +14,18 @@
     opacity: 1;
     transform: translateY(0); } }
 
+.banner {
+  grid-column: full-start / full-end;
+  display: grid;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  background-position: sticky;
+  height: 50rem;
+  position: relative;
+  background-attachment: fixed; }
+
 *,
 *::before,
 *::after {
@@ -24,7 +36,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .body {
   color: #192735;
@@ -73,10 +85,6 @@ html {
     color: #00ffb3; }
   .colored__link-2:hover {
     color: #8400ff; }
-
-.simple__link {
-  text-decoration: none;
-  color: #747373; }
 
 .btn {
   background-color: transparent;
@@ -137,6 +145,31 @@ html {
   grid-column: center-start / center-end;
   background-color: blue; }
 
-.contact {
+.footer {
   grid-column: center-start / center-end;
-  background-color: aqua; }
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .footer__contact-box .email {
+    color: #192735;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: inherit;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  .footer__contact-box .social {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+    display: flex;
+    list-style: none;
+    font-weight: 100;
+    margin-top: 1rem; }
+    .footer__contact-box .social a {
+      color: #192735;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: 100; }
+      .footer__contact-box .social a:hover {
+        color: red; }

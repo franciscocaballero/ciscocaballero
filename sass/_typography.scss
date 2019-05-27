@@ -51,7 +51,9 @@
     font-size: .8rem;
     letter-spacing: 1px;
     &:hover {
-        @include hover-color;
+       color: $color-black !important;
+       border: 1px solid $color-black;
+       transition: .2s;
     }
     
 }

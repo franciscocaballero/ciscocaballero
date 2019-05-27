@@ -1,0 +1,38 @@
+.footer {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  &__contact-box {
+    .email {
+      color: $color-grey-dark-3;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-family: inherit;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .social {
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-family: inherit;
+      display: flex;
+      list-style: none;
+      font-weight: 100;
+      margin-top: 1rem;
+    
+      a {
+        color: $color-grey-dark-3;
+        text-decoration: none;
+        margin-right: 1rem;
+        font-weight: 100;
+        &:hover {
+            color: red;
+        }
+      }
+    }
+  }
+}
